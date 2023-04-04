@@ -34,7 +34,7 @@ def generate_run_sh_htc(node, generation_number):
 	   f'python {python_command_plot} > output_ht_plot.txt 2> error_ht_plot.txt\n'
            #f'rm -rf xsuite_lines\n'
            #f'cp -rf output* log* *parquet {node.get_abs_path()}\n')
-           f'cp -rf *output* *log* *parquet* *txt* {node.get_abs_path()}\n')
+           f'cp -rf *output* *parquet* *txt* {node.get_abs_path()}\n')
    else:
    	return (f'#!/bin/bash\n'
            f'source {node.root.parameters["setup_env_script"]}\n'
