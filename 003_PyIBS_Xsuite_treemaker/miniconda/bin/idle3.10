@@ -1,0 +1,5 @@
+#!/afs/cern.ch/work/e/elwaagaa/public/IBS/IBS_benchmark_for_Xsuite/003_PyIBS_Xsuite_treemaker/miniconda/bin/python3.10
+
+from idlelib.pyshell import main
+if __name__ == '__main__':
+    main()
