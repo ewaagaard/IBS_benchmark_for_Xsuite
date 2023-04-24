@@ -1,5 +1,0 @@
-#!/afs/cern.ch/work/e/elwaagaa/public/IBS/IBS_benchmark_for_Xsuite/003_PyIBS_Xsuite_treemaker/miniconda/bin/python3.10
-
-import pydoc
-if __name__ == '__main__':
-    pydoc.cli()
