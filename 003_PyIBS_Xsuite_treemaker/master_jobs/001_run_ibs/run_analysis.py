@@ -178,8 +178,9 @@ for mode in modes:
                                                   )
             # Calculate energy spread and bunch length 
             Sigma_E = Sig_M*IBS.betar**2
-            BunchL = ion_BunchLength(IBS.Circu, Harmonic_Num, IBS.EnTot, IBS.slip, 
-                       Sigma_E, IBS.betar, RF_Voltage*1e-3, Energy_loss, IBS.Ncharg)
+            #BunchL = ion_BunchLength(IBS.Circu, Harmonic_Num, IBS.EnTot, IBS.slip, 
+            #           Sigma_E, IBS.betar, RF_Voltage*1e-3, Energy_loss, IBS.Ncharg)
+            BunchL = turn_by_turn['bl'][i-1] * np.exp(dt * float(0.5 * IBS.Ipp))  # correct bunch length, also for non-linear case
             
             # Save the data 
             turn_by_turn['bl'][i]        = BunchL
